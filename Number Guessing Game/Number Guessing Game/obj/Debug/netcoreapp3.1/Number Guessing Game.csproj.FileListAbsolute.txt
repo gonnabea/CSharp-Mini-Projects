@@ -1,0 +1,13 @@
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\bin\Debug\netcoreapp3.1\Number Guessing Game.exe
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\bin\Debug\netcoreapp3.1\Number Guessing Game.deps.json
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\bin\Debug\netcoreapp3.1\Number Guessing Game.runtimeconfig.json
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\bin\Debug\netcoreapp3.1\Number Guessing Game.runtimeconfig.dev.json
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\bin\Debug\netcoreapp3.1\Number Guessing Game.dll
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\bin\Debug\netcoreapp3.1\Number Guessing Game.pdb
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\obj\Debug\netcoreapp3.1\Number Guessing Game.csprojAssemblyReference.cache
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\obj\Debug\netcoreapp3.1\Number Guessing Game.AssemblyInfoInputs.cache
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\obj\Debug\netcoreapp3.1\Number Guessing Game.AssemblyInfo.cs
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\obj\Debug\netcoreapp3.1\Number Guessing Game.csproj.CoreCompileInputs.cache
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\obj\Debug\netcoreapp3.1\Number Guessing Game.dll
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\obj\Debug\netcoreapp3.1\Number Guessing Game.pdb
+C:\Users\최지원\Desktop\프로그래밍\C#\Number Guessing Game\Number Guessing Game\obj\Debug\netcoreapp3.1\Number Guessing Game.genruntimeconfig.cache
