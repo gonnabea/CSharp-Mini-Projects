@@ -31,10 +31,14 @@ namespace NoteTaking
         private void Form1_Load(object sender, EventArgs e)
         {
             table = new DataTable();
-            table.Columns.Add("title", typeof(String));
+            table.Columns.Add("Title", typeof(String));
             table.Columns.Add("Messages", typeof(String));
 
             dataGridView1.DataSource = table;
+            
+            dataGridView1.Columns["Messages"].Visible = false;
+            dataGridView1.Columns["Title"].Width = 231;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
