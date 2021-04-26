@@ -31,7 +31,6 @@ namespace Telephone_diary
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -63,19 +62,12 @@ namespace Telephone_diary
             this.textBox2.Size = new System.Drawing.Size(244, 27);
             this.textBox2.TabIndex = 2;
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(625, 454);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(13, 27);
-            this.textBox4.TabIndex = 4;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(437, 281);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 6;
+            this.button1.TabIndex = 5;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -84,7 +76,7 @@ namespace Telephone_diary
             this.button2.Location = new System.Drawing.Point(436, 326);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 7;
+            this.button2.TabIndex = 6;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -101,7 +93,8 @@ namespace Telephone_diary
             this.textBox5.Location = new System.Drawing.Point(149, 119);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(215, 39);
-            this.textBox5.TabIndex = 10;
+            this.textBox5.TabIndex = 0;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox7
             // 
@@ -109,7 +102,7 @@ namespace Telephone_diary
             this.textBox7.Location = new System.Drawing.Point(149, 162);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(215, 39);
-            this.textBox7.TabIndex = 11;
+            this.textBox7.TabIndex = 1;
             // 
             // textBox8
             // 
@@ -117,7 +110,7 @@ namespace Telephone_diary
             this.textBox8.Location = new System.Drawing.Point(149, 205);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(215, 39);
-            this.textBox8.TabIndex = 12;
+            this.textBox8.TabIndex = 2;
             // 
             // textBox9
             // 
@@ -125,7 +118,7 @@ namespace Telephone_diary
             this.textBox9.Location = new System.Drawing.Point(149, 250);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(215, 39);
-            this.textBox9.TabIndex = 13;
+            this.textBox9.TabIndex = 3;
             // 
             // dataGridView1
             // 
@@ -135,7 +128,7 @@ namespace Telephone_diary
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(300, 188);
-            this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.TabIndex = 7;
             // 
             // label1
             // 
@@ -144,7 +137,7 @@ namespace Telephone_diary
             this.label1.Location = new System.Drawing.Point(8, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 32);
-            this.label1.TabIndex = 16;
+            this.label1.TabIndex = 9;
             this.label1.Text = "Last Name :";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -155,7 +148,7 @@ namespace Telephone_diary
             this.label2.Location = new System.Drawing.Point(47, 205);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 32);
-            this.label2.TabIndex = 17;
+            this.label2.TabIndex = 10;
             this.label2.Text = "Mobile :";
             // 
             // label3
@@ -165,7 +158,7 @@ namespace Telephone_diary
             this.label3.Location = new System.Drawing.Point(65, 250);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 32);
-            this.label3.TabIndex = 18;
+            this.label3.TabIndex = 11;
             this.label3.Text = "Email :";
             // 
             // label4
@@ -175,7 +168,7 @@ namespace Telephone_diary
             this.label4.Location = new System.Drawing.Point(26, 295);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 32);
-            this.label4.TabIndex = 19;
+            this.label4.TabIndex = 12;
             this.label4.Text = "Category :";
             // 
             // label5
@@ -185,7 +178,7 @@ namespace Telephone_diary
             this.label5.Location = new System.Drawing.Point(6, 119);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 32);
-            this.label5.TabIndex = 20;
+            this.label5.TabIndex = 8;
             this.label5.Text = "First Name :";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
@@ -202,13 +195,13 @@ namespace Telephone_diary
             this.comboBox1.Location = new System.Drawing.Point(149, 295);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(215, 39);
-            this.comboBox1.TabIndex = 21;
+            this.comboBox1.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 458);
+            this.ClientSize = new System.Drawing.Size(782, 553);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -223,11 +216,11 @@ namespace Telephone_diary
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -237,7 +230,6 @@ namespace Telephone_diary
         #endregion
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox6;
