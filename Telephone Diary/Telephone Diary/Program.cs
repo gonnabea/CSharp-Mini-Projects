@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Telephone_Diary
+namespace Telephone_diary
 {
     static class Program
     {

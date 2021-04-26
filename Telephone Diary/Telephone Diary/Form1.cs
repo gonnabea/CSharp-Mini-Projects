@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Telephone_Diary
+namespace Telephone_diary
 {
-    public partial class Phone : Form
+    public partial class Form1 : Form
     {
-        public Phone()
+        public Form1()
         {
             InitializeComponent();
         }
+
     }
 }

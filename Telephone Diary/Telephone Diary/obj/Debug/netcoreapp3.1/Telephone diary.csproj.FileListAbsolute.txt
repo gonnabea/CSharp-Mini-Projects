@@ -1,0 +1,14 @@
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\bin\Debug\netcoreapp3.1\Telephone diary.exe
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\bin\Debug\netcoreapp3.1\Telephone diary.deps.json
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\bin\Debug\netcoreapp3.1\Telephone diary.runtimeconfig.json
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\bin\Debug\netcoreapp3.1\Telephone diary.runtimeconfig.dev.json
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\bin\Debug\netcoreapp3.1\Telephone diary.dll
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\bin\Debug\netcoreapp3.1\Telephone diary.pdb
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\obj\Debug\netcoreapp3.1\Telephone_diary.Form1.resources
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\obj\Debug\netcoreapp3.1\Telephone diary.csproj.GenerateResource.cache
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\obj\Debug\netcoreapp3.1\Telephone diary.AssemblyInfoInputs.cache
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\obj\Debug\netcoreapp3.1\Telephone diary.AssemblyInfo.cs
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\obj\Debug\netcoreapp3.1\Telephone diary.csproj.CoreCompileInputs.cache
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\obj\Debug\netcoreapp3.1\Telephone diary.dll
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\obj\Debug\netcoreapp3.1\Telephone diary.pdb
+C:\Users\최지원\Desktop\프로그래밍\C#\Telephone diary\Telephone diary\obj\Debug\netcoreapp3.1\Telephone diary.genruntimeconfig.cache

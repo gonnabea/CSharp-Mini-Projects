@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\최지원\\Desktop\\프로그래밍\\C#\\Telephone Diary\\Telephone Diary\\Telephone Diary.csproj": {}
+    "C:\\Users\\최지원\\Desktop\\프로그래밍\\C#\\Telephone diary\\Telephone diary\\Telephone diary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\최지원\\Desktop\\프로그래밍\\C#\\Telephone Diary\\Telephone Diary\\Telephone Diary.csproj": {
+    "C:\\Users\\최지원\\Desktop\\프로그래밍\\C#\\Telephone diary\\Telephone diary\\Telephone diary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\최지원\\Desktop\\프로그래밍\\C#\\Telephone Diary\\Telephone Diary\\Telephone Diary.csproj",
-        "projectName": "Telephone Diary",
-        "projectPath": "C:\\Users\\최지원\\Desktop\\프로그래밍\\C#\\Telephone Diary\\Telephone Diary\\Telephone Diary.csproj",
+        "projectUniqueName": "C:\\Users\\최지원\\Desktop\\프로그래밍\\C#\\Telephone diary\\Telephone diary\\Telephone diary.csproj",
+        "projectName": "Telephone diary",
+        "projectPath": "C:\\Users\\최지원\\Desktop\\프로그래밍\\C#\\Telephone diary\\Telephone diary\\Telephone diary.csproj",
         "packagesPath": "C:\\Users\\최지원\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\최지원\\Desktop\\프로그래밍\\C#\\Telephone Diary\\Telephone Diary\\obj\\",
+        "outputPath": "C:\\Users\\최지원\\Desktop\\프로그래밍\\C#\\Telephone diary\\Telephone diary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\최지원\\AppData\\Roaming\\NuGet\\NuGet.Config",
