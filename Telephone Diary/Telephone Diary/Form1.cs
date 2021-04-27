@@ -37,6 +37,22 @@ namespace Telephone_diary
             this.ActiveControl = textBox5;
             textBox5.Focus(); // 프로그램 실행 시 포커스 되어있게.
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox5.Text = "";
+            textBox6.Clear();
+            textBox7.Text = "";
+            textBox8.Clear();
+            textBox9.Clear();
+            comboBox1.SelectedIndex = -1;
+            textBox5.Focus();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
