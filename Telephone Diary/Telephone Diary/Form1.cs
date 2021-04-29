@@ -142,6 +142,26 @@ namespace Telephone_diary
             Display();
         }
 
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            //Mobile(유니크 키) 값과, First Name, Last Name으로 칼럼 검색하는 쿼리
+            SqlDataAdapter sda = new SqlDataAdapter("Select * from Mobiles Where (Mobile like '%" + textBox3.Text + "%') or (First like '%" + textBox3.Text + "%') or (Last like '%" + textBox3.Text + "%') ", con);
+
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            dataGridView1.Rows.Clear();
+            foreach (DataRow item in dt.Rows)
+            {
+                int n = dataGridView1.Rows.Add();
+                dataGridView1.Rows[n].Cells[0].Value = item["First"].ToString();
+                dataGridView1.Rows[n].Cells[1].Value = item[1].ToString();
+                dataGridView1.Rows[n].Cells[2].Value = item[2].ToString();
+                dataGridView1.Rows[n].Cells[3].Value = item[3].ToString();
+                dataGridView1.Rows[n].Cells[4].Value = item[4].ToString();
+
+            }
+        }
     }
 }
 
