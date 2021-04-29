@@ -118,6 +118,17 @@ namespace Telephone_diary
         {
 
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand(@"UPDATE Mobiles
+            SET First ='" + textBox5.Text + "', Last ='" + textBox7.Text + "', Mobile ='" + textBox8.Text + "', Email ='" + textBox9.Text + "', Category = '" + comboBox1.Text + "' WHERE (Mobile = '" + textBox8.Text + "')", con); // 유니크 키가 Mobile이기 때문에 WHERE Mobile을 사용(?) 
+            cmd.ExecuteNonQuery();
+
+            con.Close();
+            MessageBox.Show("SuccessFully Updated...!");
+            Display();
+        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -130,6 +141,7 @@ namespace Telephone_diary
             MessageBox.Show("SuccessFully Deleted...!");
             Display();
         }
+
     }
 }
 
