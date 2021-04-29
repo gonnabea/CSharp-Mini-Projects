@@ -118,6 +118,18 @@ namespace Telephone_diary
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand(@"DELETE FROM Mobiles
+            WHERE (Mobile = '" + textBox8.Text + "')", con); // 유니크 키가 Mobile이기 때문에 WHERE Mobile을 사용(?) 
+            cmd.ExecuteNonQuery();
+
+            con.Close();
+            MessageBox.Show("SuccessFully Deleted...!");
+            Display();
+        }
     }
 }
 
