@@ -42,6 +42,7 @@ namespace Telephone_diary
         {
             this.ActiveControl = textBox5;
             textBox5.Focus(); // 프로그램 실행 시 포커스 되어있게.
+            Display(); // 실행 시 Query All
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -70,8 +71,10 @@ namespace Telephone_diary
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+      
         }
+
+ 
 
         void Display()
         {

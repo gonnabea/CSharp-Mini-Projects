@@ -71,7 +71,7 @@ namespace Telephone_diary
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(428, 308);
+            this.button1.Location = new System.Drawing.Point(441, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 38);
             this.button1.TabIndex = 5;
@@ -81,7 +81,7 @@ namespace Telephone_diary
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(596, 308);
+            this.button2.Location = new System.Drawing.Point(609, 352);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 38);
             this.button2.TabIndex = 6;
@@ -99,7 +99,7 @@ namespace Telephone_diary
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(169, 151);
+            this.textBox5.Location = new System.Drawing.Point(180, 287);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(215, 39);
             this.textBox5.TabIndex = 0;
@@ -108,7 +108,7 @@ namespace Telephone_diary
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(169, 194);
+            this.textBox7.Location = new System.Drawing.Point(180, 330);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(215, 39);
             this.textBox7.TabIndex = 1;
@@ -116,7 +116,7 @@ namespace Telephone_diary
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox8.Location = new System.Drawing.Point(169, 237);
+            this.textBox8.Location = new System.Drawing.Point(180, 373);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(215, 39);
             this.textBox8.TabIndex = 2;
@@ -124,13 +124,14 @@ namespace Telephone_diary
             // textBox9
             // 
             this.textBox9.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox9.Location = new System.Drawing.Point(169, 282);
+            this.textBox9.Location = new System.Drawing.Point(180, 418);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(215, 39);
             this.textBox9.TabIndex = 3;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -139,10 +140,10 @@ namespace Telephone_diary
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(428, 88);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(300, 188);
+            this.dataGridView1.Size = new System.Drawing.Size(758, 243);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.Tag = "";
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -186,7 +187,7 @@ namespace Telephone_diary
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(28, 194);
+            this.label1.Location = new System.Drawing.Point(39, 330);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 32);
             this.label1.TabIndex = 9;
@@ -197,7 +198,7 @@ namespace Telephone_diary
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(67, 237);
+            this.label2.Location = new System.Drawing.Point(78, 373);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 32);
             this.label2.TabIndex = 10;
@@ -207,7 +208,7 @@ namespace Telephone_diary
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(85, 282);
+            this.label3.Location = new System.Drawing.Point(96, 418);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 32);
             this.label3.TabIndex = 11;
@@ -217,7 +218,7 @@ namespace Telephone_diary
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(46, 327);
+            this.label4.Location = new System.Drawing.Point(57, 463);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 32);
             this.label4.TabIndex = 12;
@@ -227,7 +228,7 @@ namespace Telephone_diary
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(26, 151);
+            this.label5.Location = new System.Drawing.Point(37, 287);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 32);
             this.label5.TabIndex = 8;
@@ -245,14 +246,14 @@ namespace Telephone_diary
             "BUSSINESS",
             "FRIENDS",
             "FAMILY"});
-            this.comboBox1.Location = new System.Drawing.Point(169, 327);
+            this.comboBox1.Location = new System.Drawing.Point(180, 463);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(215, 39);
             this.comboBox1.TabIndex = 4;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(428, 362);
+            this.button3.Location = new System.Drawing.Point(441, 406);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 38);
             this.button3.TabIndex = 5;
@@ -261,7 +262,7 @@ namespace Telephone_diary
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(596, 362);
+            this.button4.Location = new System.Drawing.Point(609, 406);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(132, 38);
             this.button4.TabIndex = 6;
