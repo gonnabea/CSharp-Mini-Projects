@@ -112,6 +112,7 @@ namespace Telephone_diary
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(215, 39);
             this.textBox7.TabIndex = 1;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // textBox8
             // 
@@ -120,6 +121,7 @@ namespace Telephone_diary
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(215, 39);
             this.textBox8.TabIndex = 2;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // textBox9
             // 
@@ -128,6 +130,7 @@ namespace Telephone_diary
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(215, 39);
             this.textBox9.TabIndex = 3;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // dataGridView1
             // 
@@ -143,10 +146,12 @@ namespace Telephone_diary
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(758, 243);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.Tag = "";
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
             // 
             // Column1
             // 

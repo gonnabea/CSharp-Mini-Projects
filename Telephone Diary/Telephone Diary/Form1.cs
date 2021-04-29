@@ -94,6 +94,30 @@ namespace Telephone_diary
 
             }
         }
+
+        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+           textBox5.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+           textBox7.Text =  dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+           textBox8.Text =  dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+           textBox9.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+           comboBox1.Text =  dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
