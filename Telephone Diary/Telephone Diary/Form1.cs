@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
+
+// 직접 패키지를 설치해야 함
+// https://stackoverflow.com/questions/41315727/how-to-connect-with-sql-server-database-using-net-core-class-library-net-stan
 using System.Data.SqlClient;
+
 
 namespace Telephone_diary
 {
     public partial class Form1 : Form
     {
+        SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=Phone;Integrated Security=True");
         public Form1()
         {
             InitializeComponent();
@@ -53,7 +50,14 @@ namespace Telephone_diary
 
         private void button2_Click(object sender, EventArgs e)
         {
+            con.Open();
+            SqlCommand cmd = new SqlCommand(@"INSERT INTO Mobiles
+            (First, Last, Mobile, Email, Category)
+            VALUES ('" + textBox5.Text + "','" + textBox7.Text + "','" + textBox8.Text + "','" + textBox9.Text + "','" + comboBox1.Text + "')", con);
+            cmd.ExecuteNonQuery();
 
+            con.Close();
+            MessageBox.Show("SuccessFully Saved...!");
         }
     }
 }
