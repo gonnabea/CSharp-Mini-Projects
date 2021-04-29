@@ -13,3 +13,4 @@ C:\Users\최지원\Desktop\프로그래밍\C#\Car Racing Game\Car Racing Game\ob
 C:\Users\최지원\Desktop\프로그래밍\C#\Car Racing Game\Car Racing Game\obj\Debug\netcoreapp3.1\Car Racing Game.dll
 C:\Users\최지원\Desktop\프로그래밍\C#\Car Racing Game\Car Racing Game\obj\Debug\netcoreapp3.1\Car Racing Game.pdb
 C:\Users\최지원\Desktop\프로그래밍\C#\Car Racing Game\Car Racing Game\obj\Debug\netcoreapp3.1\Car Racing Game.genruntimeconfig.cache
+C:\Users\최지원\Desktop\프로그래밍\C#\Car Racing Game\Car Racing Game\obj\Debug\netcoreapp3.1\Car_Racing_Game.Properties.Resources.resources

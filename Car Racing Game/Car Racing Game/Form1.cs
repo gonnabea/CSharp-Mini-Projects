@@ -80,5 +80,31 @@ namespace Car_Racing_Game
             }
 
         }
+
+        // 자동차 이동 구현
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Left)
+            {
+                if(car.Left > 10) // 자동차 왼쪽 이동 한계 범위 설정
+                car.Left += -8;
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                if (car.Left < 690) // 자동차 오른쪽 이동 한계 범위 설정
+                    car.Left += 8;
+            }
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
