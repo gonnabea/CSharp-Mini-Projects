@@ -1,15 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
-
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
 // 직접 패키지를 설치해야 함
 // https://stackoverflow.com/questions/41315727/how-to-connect-with-sql-server-database-using-net-core-class-library-net-stan
 using System.Data.SqlClient;
+
+
 
 
 namespace Telephone_diary
 {
     public partial class Form1 : Form
     {
+
         SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=Phone;Integrated Security=True");
         public Form1()
         {
@@ -46,6 +53,7 @@ namespace Telephone_diary
             textBox9.Clear();
             comboBox1.SelectedIndex = -1;
             textBox5.Focus();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -58,6 +66,30 @@ namespace Telephone_diary
 
             con.Close();
             MessageBox.Show("SuccessFully Saved...!");
+            Display();
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        void Display()
+        {
+            SqlDataAdapter sda = new SqlDataAdapter("Select * from Mobiles", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            dataGridView1.Rows.Clear();
+            foreach (DataRow item in dt.Rows)
+            {
+                int n = dataGridView1.Rows.Add();
+                dataGridView1.Rows[n].Cells[0].Value = item["First"].ToString();
+                dataGridView1.Rows[n].Cells[1].Value = item[1].ToString();
+                dataGridView1.Rows[n].Cells[2].Value = item[2].ToString();
+                dataGridView1.Rows[n].Cells[3].Value = item[3].ToString();
+                dataGridView1.Rows[n].Cells[4].Value = item[4].ToString();
+
+            }
         }
     }
 }
