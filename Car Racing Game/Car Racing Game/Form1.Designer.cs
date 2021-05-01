@@ -42,6 +42,9 @@ namespace Car_Racing_Game
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.car = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.enemy1 = new System.Windows.Forms.PictureBox();
+            this.enemy3 = new System.Windows.Forms.PictureBox();
+            this.enemy2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -52,6 +55,9 @@ namespace Car_Racing_Game
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.car)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -152,12 +158,48 @@ namespace Car_Racing_Game
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
             // 
+            // enemy1
+            // 
+            this.enemy1.Image = ((System.Drawing.Image)(resources.GetObject("enemy1.Image")));
+            this.enemy1.Location = new System.Drawing.Point(115, 172);
+            this.enemy1.Name = "enemy1";
+            this.enemy1.Size = new System.Drawing.Size(78, 95);
+            this.enemy1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.enemy1.TabIndex = 1;
+            this.enemy1.TabStop = false;
+            this.enemy1.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // enemy3
+            // 
+            this.enemy3.Image = ((System.Drawing.Image)(resources.GetObject("enemy3.Image")));
+            this.enemy3.Location = new System.Drawing.Point(644, 230);
+            this.enemy3.Name = "enemy3";
+            this.enemy3.Size = new System.Drawing.Size(78, 95);
+            this.enemy3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.enemy3.TabIndex = 1;
+            this.enemy3.TabStop = false;
+            this.enemy3.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // enemy2
+            // 
+            this.enemy2.Image = ((System.Drawing.Image)(resources.GetObject("enemy2.Image")));
+            this.enemy2.Location = new System.Drawing.Point(436, 37);
+            this.enemy2.Name = "enemy2";
+            this.enemy2.Size = new System.Drawing.Size(78, 95);
+            this.enemy2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.enemy2.TabIndex = 1;
+            this.enemy2.TabStop = false;
+            this.enemy2.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(782, 553);
+            this.Controls.Add(this.enemy3);
+            this.Controls.Add(this.enemy2);
+            this.Controls.Add(this.enemy1);
             this.Controls.Add(this.car);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
@@ -182,6 +224,9 @@ namespace Car_Racing_Game
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.car)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -199,6 +244,9 @@ namespace Car_Racing_Game
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox car;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox enemy1;
+        private System.Windows.Forms.PictureBox enemy3;
+        private System.Windows.Forms.PictureBox enemy2;
     }
 }
 

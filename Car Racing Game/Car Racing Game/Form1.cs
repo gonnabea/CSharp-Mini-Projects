@@ -18,23 +18,68 @@ namespace Car_Racing_Game
         }
 
         int gamespeed = 0;
+        // 반복 실행되는 로직
         private void timer1_Tick(object sender, EventArgs e)
         {
             moveline(gamespeed);
+            enemy(gamespeed);
         }
 
-        void moveline(int speed)
+        Random random = new Random();
+        int x, y;
+        void enemy(int speed)
         {
-            // 직진하고 있는 것 같은 효과를 주기 위한 차선 애니메이션
-            if(pictureBox1.Top >= 500)
+            if (enemy1.Top >= 500)
             {
-                pictureBox1.Top = 0;
+                enemy1.Top = 0;
+            }else
+            {
+                enemy1.Top += speed;
+            }
+
+            if (enemy1.Top >= 500)
+            {
+                // 차가 화면 밖으로 벗어났을 때 랜덤 위치에서 재생성
+                x = random.Next(0, 200);
+
+
+                enemy1.Location = new Point(x, 0);
             }
             else
             {
-                pictureBox1.Top += speed;
+                // enemy1.Top += speed;
             }
 
+            if (enemy2.Top >= 500)
+            {
+                // 차가 화면 밖으로 벗어났을 때 랜덤 위치에서 재생성
+                x = random.Next(200, 400);
+
+
+                enemy2.Location = new Point(x, 0);
+            }
+            else
+            {
+                enemy2.Top += speed;
+            }
+
+            if (enemy3.Top >= 500)
+            {
+                // 차가 화면 밖으로 벗어났을 때 랜덤 위치에서 재생성
+                x = random.Next(400, 800);
+
+
+                enemy3.Location = new Point(x, 0);
+            }
+            else
+            {
+                enemy3.Top += speed;
+            }
+        }
+
+        // 직진하고 있는 것 같은 효과를 주기 위한 차선 애니메이션
+        void moveline(int speed)
+        {
             if (pictureBox2.Top >= 500)
             {
                 pictureBox2.Top = 0;
