@@ -135,7 +135,7 @@ namespace Car_Racing_Game
             // car
             // 
             this.car.Image = ((System.Drawing.Image)(resources.GetObject("car.Image")));
-            this.car.Location = new System.Drawing.Point(146, 197);
+            this.car.Location = new System.Drawing.Point(180, 427);
             this.car.Name = "car";
             this.car.Size = new System.Drawing.Size(78, 95);
             this.car.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

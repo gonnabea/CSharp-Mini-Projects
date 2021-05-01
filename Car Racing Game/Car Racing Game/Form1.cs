@@ -17,9 +17,10 @@ namespace Car_Racing_Game
             InitializeComponent();
         }
 
+        int gamespeed = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            moveline(5);
+            moveline(gamespeed);
         }
 
         void moveline(int speed)
@@ -80,14 +81,14 @@ namespace Car_Racing_Game
             }
 
         }
-
+        
         // 자동차 이동 구현
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Left)
             {
                 if(car.Left > 10) // 자동차 왼쪽 이동 한계 범위 설정
-                car.Left += -8;
+                car.Left += - 8;
             }
             if (e.KeyCode == Keys.Right)
             {
@@ -95,6 +96,18 @@ namespace Car_Racing_Game
                     car.Left += 8;
             }
 
+            // 위쪽 방향키를 눌렀을 때 자동차 속도 증가
+            if(e.KeyCode==Keys.Up)
+                if (gamespeed < 21)
+                {
+                    gamespeed++;
+                }
+            // 아랫쪽 방향키를 눌렀을 때 자동차 속도 감소
+            if(e.KeyCode==Keys.Down)
+                if (gamespeed > 0)
+                {
+                    gamespeed--;
+                }
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
