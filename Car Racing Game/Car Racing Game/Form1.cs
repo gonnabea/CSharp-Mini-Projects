@@ -15,6 +15,8 @@ namespace Car_Racing_Game
         public Form1()
         {
             InitializeComponent();
+            gameOverText.Visible = false;
+
         }
 
         int gamespeed = 0;
@@ -23,6 +25,7 @@ namespace Car_Racing_Game
         {
             moveline(gamespeed);
             enemy(gamespeed);
+            gameover();
         }
 
         Random random = new Random();
@@ -74,6 +77,16 @@ namespace Car_Racing_Game
             else
             {
                 enemy3.Top += speed;
+            }
+        }
+
+        void gameover()
+        {
+            // 적 자동차와 부딪혔을 때
+            if (car.Bounds.IntersectsWith(enemy1.Bounds) || car.Bounds.IntersectsWith(enemy2.Bounds) || car.Bounds.IntersectsWith(enemy3.Bounds))
+            {
+                timer1.Enabled = false;
+                gameOverText.Visible = true;
             }
         }
 

@@ -45,6 +45,7 @@ namespace Car_Racing_Game
             this.enemy1 = new System.Windows.Forms.PictureBox();
             this.enemy3 = new System.Windows.Forms.PictureBox();
             this.enemy2 = new System.Windows.Forms.PictureBox();
+            this.gameOverText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -191,12 +192,25 @@ namespace Car_Racing_Game
             this.enemy2.TabStop = false;
             this.enemy2.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
+            // gameOverText
+            // 
+            this.gameOverText.AutoSize = true;
+            this.gameOverText.BackColor = System.Drawing.Color.Black;
+            this.gameOverText.Font = new System.Drawing.Font("예스체", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.gameOverText.ForeColor = System.Drawing.Color.Red;
+            this.gameOverText.Location = new System.Drawing.Point(301, 135);
+            this.gameOverText.Name = "gameOverText";
+            this.gameOverText.Size = new System.Drawing.Size(185, 40);
+            this.gameOverText.TabIndex = 2;
+            this.gameOverText.Text = "Game Over";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(782, 553);
+            this.Controls.Add(this.gameOverText);
             this.Controls.Add(this.enemy3);
             this.Controls.Add(this.enemy2);
             this.Controls.Add(this.enemy1);
@@ -228,6 +242,7 @@ namespace Car_Racing_Game
             ((System.ComponentModel.ISupportInitialize)(this.enemy3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -247,6 +262,7 @@ namespace Car_Racing_Game
         private System.Windows.Forms.PictureBox enemy1;
         private System.Windows.Forms.PictureBox enemy3;
         private System.Windows.Forms.PictureBox enemy2;
+        private System.Windows.Forms.Label gameOverText;
     }
 }
 
