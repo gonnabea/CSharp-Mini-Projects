@@ -46,6 +46,11 @@ namespace Car_Racing_Game
             this.enemy3 = new System.Windows.Forms.PictureBox();
             this.enemy2 = new System.Windows.Forms.PictureBox();
             this.gameOverText = new System.Windows.Forms.Label();
+            this.coin2 = new System.Windows.Forms.PictureBox();
+            this.coin3 = new System.Windows.Forms.PictureBox();
+            this.coin4 = new System.Windows.Forms.PictureBox();
+            this.coin1 = new System.Windows.Forms.PictureBox();
+            this.pointLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -59,6 +64,10 @@ namespace Car_Racing_Game
             ((System.ComponentModel.ISupportInitialize)(this.enemy1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -204,15 +213,74 @@ namespace Car_Racing_Game
             this.gameOverText.TabIndex = 2;
             this.gameOverText.Text = "Game Over";
             // 
+            // coin2
+            // 
+            this.coin2.Image = ((System.Drawing.Image)(resources.GetObject("coin2.Image")));
+            this.coin2.Location = new System.Drawing.Point(261, 219);
+            this.coin2.Name = "coin2";
+            this.coin2.Size = new System.Drawing.Size(25, 25);
+            this.coin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.coin2.TabIndex = 1;
+            this.coin2.TabStop = false;
+            this.coin2.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // coin3
+            // 
+            this.coin3.Image = ((System.Drawing.Image)(resources.GetObject("coin3.Image")));
+            this.coin3.Location = new System.Drawing.Point(575, 284);
+            this.coin3.Name = "coin3";
+            this.coin3.Size = new System.Drawing.Size(25, 25);
+            this.coin3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.coin3.TabIndex = 1;
+            this.coin3.TabStop = false;
+            this.coin3.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // coin4
+            // 
+            this.coin4.Image = ((System.Drawing.Image)(resources.GetObject("coin4.Image")));
+            this.coin4.Location = new System.Drawing.Point(644, 80);
+            this.coin4.Name = "coin4";
+            this.coin4.Size = new System.Drawing.Size(25, 25);
+            this.coin4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.coin4.TabIndex = 1;
+            this.coin4.TabStop = false;
+            this.coin4.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // coin1
+            // 
+            this.coin1.Image = ((System.Drawing.Image)(resources.GetObject("coin1.Image")));
+            this.coin1.Location = new System.Drawing.Point(195, 62);
+            this.coin1.Name = "coin1";
+            this.coin1.Size = new System.Drawing.Size(25, 25);
+            this.coin1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.coin1.TabIndex = 1;
+            this.coin1.TabStop = false;
+            this.coin1.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // pointLabel
+            // 
+            this.pointLabel.AutoSize = true;
+            this.pointLabel.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.pointLabel.Location = new System.Drawing.Point(27, 9);
+            this.pointLabel.Name = "pointLabel";
+            this.pointLabel.Size = new System.Drawing.Size(75, 28);
+            this.pointLabel.TabIndex = 3;
+            this.pointLabel.Text = "Points:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(782, 553);
+            this.Controls.Add(this.pointLabel);
             this.Controls.Add(this.gameOverText);
             this.Controls.Add(this.enemy3);
             this.Controls.Add(this.enemy2);
+            this.Controls.Add(this.coin3);
+            this.Controls.Add(this.coin4);
+            this.Controls.Add(this.coin1);
+            this.Controls.Add(this.coin2);
             this.Controls.Add(this.enemy1);
             this.Controls.Add(this.car);
             this.Controls.Add(this.pictureBox9);
@@ -241,6 +309,10 @@ namespace Car_Racing_Game
             ((System.ComponentModel.ISupportInitialize)(this.enemy1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,6 +335,11 @@ namespace Car_Racing_Game
         private System.Windows.Forms.PictureBox enemy3;
         private System.Windows.Forms.PictureBox enemy2;
         private System.Windows.Forms.Label gameOverText;
+        private System.Windows.Forms.PictureBox coin2;
+        private System.Windows.Forms.PictureBox coin3;
+        private System.Windows.Forms.PictureBox coin4;
+        private System.Windows.Forms.PictureBox coin1;
+        private System.Windows.Forms.Label pointLabel;
     }
 }
 

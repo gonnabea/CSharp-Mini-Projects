@@ -24,22 +24,21 @@ namespace Car_Racing_Game
         private void timer1_Tick(object sender, EventArgs e)
         {
             moveline(gamespeed);
-            enemy(gamespeed);
+            enemyMove(gamespeed);
+            coinMove(gamespeed);
             gameover();
+            coinsCollection();
         }
+
+        int collectedCoin = 0;
 
         Random random = new Random();
         int x, y;
-        void enemy(int speed)
-        {
-            if (enemy1.Top >= 500)
-            {
-                enemy1.Top = 0;
-            }else
-            {
-                enemy1.Top += speed;
-            }
 
+        // 적 자동차 움직임 로직
+        void enemyMove(int speed)
+        {
+            // 적의 위치가 화면 밖으로 벗어났을 때
             if (enemy1.Top >= 500)
             {
                 // 차가 화면 밖으로 벗어났을 때 랜덤 위치에서 재생성
@@ -48,9 +47,10 @@ namespace Car_Racing_Game
 
                 enemy1.Location = new Point(x, 0);
             }
+            // 적의 위치가 화면 범위내에 있을 때
             else
             {
-                // enemy1.Top += speed;
+                enemy1.Top += speed;
             }
 
             if (enemy2.Top >= 500)
@@ -80,9 +80,77 @@ namespace Car_Racing_Game
             }
         }
 
+        // 코인 움직임 로직
+        void coinMove(int speed)
+        {
+            // 코인의 위치가 화면 밖으로 벗어났을 때
+            if (coin1.Top >= 500)
+            {
+                // 코인이 화면 밖으로 벗어났을 때 랜덤 위치에서 재생성
+                x = random.Next(0, 200);
+
+
+                coin1.Location = new Point(x, 0);
+            }
+            // 코인의 위치가 화면 범위내에 있을 때
+            else
+            {
+                coin1.Top += speed;
+            }
+
+            // 코인의 위치가 화면 밖으로 벗어났을 때
+            if (coin2.Top >= 500)
+            {
+                // 코인이 화면 밖으로 벗어났을 때 랜덤 위치에서 재생성
+                x = random.Next(0, 200);
+
+
+                coin2.Location = new Point(x, 0);
+            }
+            // 코인의 위치가 화면 범위내에 있을 때
+            else
+            {
+                coin2.Top += speed;
+            }
+
+            // 코인의 위치가 화면 밖으로 벗어났을 때
+            if (coin3.Top >= 500)
+            {
+                // 코인이 화면 밖으로 벗어났을 때 랜덤 위치에서 재생성
+                x = random.Next(0, 200);
+
+
+                coin3.Location = new Point(x, 0);
+            }
+            // 코인의 위치가 화면 범위내에 있을 때
+            else
+            {
+                coin3.Top += speed;
+            }
+
+            // 코인의 위치가 화면 밖으로 벗어났을 때
+            if (coin4.Top >= 500)
+            {
+                // 코인이 화면 밖으로 벗어났을 때 랜덤 위치에서 재생성
+                x = random.Next(0, 200);
+
+
+                coin4.Location = new Point(x, 0);
+            }
+            // 코인의 위치가 화면 범위내에 있을 때
+            else
+            {
+                coin4.Top += speed;
+            }
+
+        }
+
+
+
+        // 적 자동차와 부딪혔을 때
         void gameover()
         {
-            // 적 자동차와 부딪혔을 때
+            
             if (car.Bounds.IntersectsWith(enemy1.Bounds) || car.Bounds.IntersectsWith(enemy2.Bounds) || car.Bounds.IntersectsWith(enemy3.Bounds))
             {
                 timer1.Enabled = false;
@@ -138,6 +206,35 @@ namespace Car_Racing_Game
                 pictureBox8.Top += speed;
             }
 
+        }
+
+        // 코인을 습득했을 때
+        void coinsCollection()
+        {
+            if (car.Bounds.IntersectsWith(coin1.Bounds))
+            {
+                collectedCoin += 1;
+                pointLabel.Text = "Points:" + collectedCoin;
+                coin1.Location = new Point(x, 0); // 코인 재생성
+            }
+            if (car.Bounds.IntersectsWith(coin2.Bounds))
+            {
+                collectedCoin += 1;
+                pointLabel.Text = "Points:" + collectedCoin;
+                coin2.Location = new Point(x, 0); // 코인 재생성
+            }
+            if (car.Bounds.IntersectsWith(coin3.Bounds))
+            {
+                collectedCoin += 1;
+                pointLabel.Text = "Points:" + collectedCoin;
+                coin3.Location = new Point(x, 0); // 코인 재생성
+            }
+            if (car.Bounds.IntersectsWith(coin4.Bounds))
+            {
+                collectedCoin += 1;
+                pointLabel.Text = "Points:" + collectedCoin;
+                coin4.Location = new Point(x, 0); // 코인 재생성
+            }
         }
         
         // 자동차 이동 구현
