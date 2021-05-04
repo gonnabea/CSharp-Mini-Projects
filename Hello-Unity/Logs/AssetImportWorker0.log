@@ -77,3 +77,11 @@ Received Import Request.
 Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c602d4445bd9e0e517b9a7c882a2249') in 0.011730 seconds
   Import took 0.015999 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 764.649946 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7960a73919d8baa12bca0e2fc225c862') in 0.157126 seconds
+  Import took 0.174231 seconds .
+
